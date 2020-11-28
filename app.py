@@ -8,6 +8,7 @@ command to create database
 CREATE TABLE post (Id INTEGER PRIMARY KEY AUTOINCREMENT, title varchar(100), description varchar(200), date INTEGER);
 """
 
+
 @app.route('/')
 def index():
     """
