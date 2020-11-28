@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:;base64,=">
+    <meta charset="UTF-8">
+    <title>ДЗ №4 урока №5 - Работа с sqlite</title>
+</head>
+<body>
+    <h1>Все записи блога</h1>
+    <ol>
+    {% for post in blog_posts %}
+    <li><b>Id:</b> {{post[0]}} ✅ <b>Title:</b> {{post[1]}} ➡ <b>Description:</b> {{post[2]}} ➽ <b>Date:</b> {{post[3]}}</li>
+    {% endfor %}
+    </ol>
+
+</body>
+</html>
